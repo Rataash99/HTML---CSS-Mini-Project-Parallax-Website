@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    color : rgb(26, 175, 26);
+    background: url('Img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position: center; */
+    font-family: 'Secular One', sans-serif;
+    overflow: hidden;
+}
+header{
+    /* border: 2px solid red; */
+    display:flex;
+    justify-content: space-between;
+    height: 8vh;
+}
+.left{
+    /* border: 2px solid green; */
+    margin: 8px;
+}
+.left img{
+    width : 60px;
+    border-radius: 50%;
+}
+.left div{
+    font-family: 'Cinzel', serif;;
+    font-weight:bold;
+    line-height: 1px;
+    font-size: 12px;
+    text-align : center;
+}
+
+.right{
+    /* border : 2px solid red; */
+    display : inline-block;
+    padding: 12px;
+}
+
+.btn{
+    font-family: 'Secular One', sans-serif;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding : 4px 20px;
+    margin : 0px 9px;
+    color:rgba(255, 255, 255, 0.671);
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    color : rgb(26, 175, 26);
+}
+.content{
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+    padding: 5px;
+}
+.about{
+    /* border: 2px solid yellow; */
+    width: 40vw;
+    height: 11vh;
+    text-align: center;
+    font-size: 1rem;
+    padding: 22px;
+}
+
+.container{
+    border : 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 12px;
+    padding: 20px;
+    width: 20remx;
+    border-radius: 20px;
+}
+
+.form-group input{
+    background-color: rgb(193, 188, 188);
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    width : 20rem;
+    border: none;
+    border-radius: 7px;
+    margin: 11px auto;
+    font-size: 1rem;
+}
+.container h1{
+    /* border: 2px solid green; */
+    text-align: center;
+    font-size: 1.5rem;
+}
+.container button{
+    /* border: 2px solid red; */
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin:30px auto;
+}
+@media only screen and (max-width: 700px){
+   .about{
+    /* border:2px solid red; */
+    height: 80vh;
+    width: 80vw;
+    padding: 0;
+    margin-top: 20px;
+    overflow-x: scroll;
+   }
+   .about h2{
+    font-size: 1.2rem;
+   }
+   .about p{
+    font-size: 0.8rem;
+   }
+   .content{
+    overflow: scroll;
+   }
+   .container{
+    /* border: 2px solid red; */
+    height:50vh;
+    margin: none;
+    padding-top:2rem;
+   }
+}
